@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers>
+    <layer name="platocdp.dataportal"
+        interface="platocdp.dataportal.interfaces.IProductSpecific" />
+</layers>
