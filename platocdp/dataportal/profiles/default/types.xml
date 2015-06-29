@@ -8,4 +8,7 @@
   -->
 <object name="portal_types" meta_type="Plone Types Tool">
   <!-- -*- extra stuff goes here -*- -->
+  <object name="platocdp.dataportal.application" meta_type="Dexterity FTI" />
+  <object name="platocdp.dataportal.dataset" meta_type="Dexterity FTI" />
+  <object name="platocdp.dataportal.organization" meta_type="Dexterity FTI" />
 </object>
