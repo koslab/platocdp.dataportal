@@ -27,42 +27,42 @@
                 class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <div class="portlet">
                     <div class="box-content">
-                    <div style="text-align:center">
-                        <img style="border-radius:5px" 
-                            src="http://lorempixel.com/g/175/175/technics"/>
-                        <h3 tal:content="context/Title"></h3>
-                    </div>
-                    <p id="platocdp-dataportal-organization-description"
-                        class="hidden-xs"
-                        tal:content="context/Description"></p>
-                    <div class="hidden-xs">
-                        <h5>Sub Organizations</h5>
-                        <div>
-                            <ul>
-                                <li tal:repeat="org view/sub_organizations"><a tal:attributes="href org/url" tal:content="org/title"></li>
-                            </ul>
+                        <div style="text-align:center">
+                            <img style="border-radius:5px" 
+                                src="http://lorempixel.com/g/175/175/technics"/>
+                            <h3 tal:content="context/Title"></h3>
                         </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                <div class="col-xs-12 col-sm-8 col-md-8 col-md-8 col-lg-8">
-                    <div class="portlet">
-                        <div class="box-header">
-                            <div class="box-name">
-                                Datasets
+                        <p id="platocdp-dataportal-organization-description"
+                            class="hidden-xs"
+                            tal:content="context/Description"></p>
+                        <div class="hidden-xs">
+                            <h5>Sub Organizations</h5>
+                            <div>
+                                <ul>
+                                    <li tal:repeat="org view/sub_organizations"><a tal:attributes="href org/url" tal:content="org/title"></a></li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="box-content">
-                            <ul>
-                                <li>
-
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-8 col-md-8 col-md-8 col-lg-8">
+                <div class="portlet">
+                    <div class="box-header">
+                        <div class="box-name">
+                            Datasets
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <ul>
+                            <li tal:repeat="dataset view/datasets">
+                                <a tal:attributes="href dataset/url" tal:content="dataset/title"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--
     <tal:block repeat="widget view/widgets/values">
         <div class="field" tal:condition="python:widget.__name__ not in ('IDublinCore.title', 'IDublinCore.description', 'title', 'description',)">
